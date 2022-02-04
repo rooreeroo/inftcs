@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="table-container">
+    <table class="table">
+        <thead class="tHeader">
+        <tr class="tRow">
+            <th class="tTitle" data-type="text" style="width: 85px;">Имя</th>
+            <th class="tTitle" data-type="text" style="width: 100px;">Фамилия</th>
+            <th class="tTitle" data-type="text" style="min-width: 200px">Описание</th>
+            <th class="tTitle" data-type="text" style="width: 100px;">Цвет глаз</th>
+        </tr>
+        </thead>
+        <tbody class="tBody"></tbody>
+    </table>
+    <ul id="pagination"></ul>
+</div>
+
+<div class="form-container hidden">
+    <form class="form">
+        <label class="form__list__item__label" for="name">Имя:</label>
+        <textarea class="form__list__item__input edit_name" id="name" name="user_name" autocomplete="off"></textarea>
+
+        <label class="form__list__item__label" for="surname">Фамилия:</label>
+        <textarea class="form__list__item__input edit_surname" id="surname" name="user_surname"
+                  autocomplete="off"> </textarea>
+
+        <label class="form__list__item__label" for="about">Описание:</label>
+        <textarea class="form__list__item__text edit_about" id="about" name="user_about" autocomplete="off"></textarea>
+
+        <label class="form__list__item__label" for="color">Цвет глаз:</label>
+        <textarea class="form__list__item__input edit_color"  id="color" name="user_eyeColor"
+                  autocomplete="off"> </textarea>
+
+        <div class="form__buttons-container">
+            <button class="form__submit form__button" type="button">Сохранить</button>
+            <button class="form__exit form__button" type="button">Закрыть</button>
+        </div>
+    </form>
+</div>
+
+<script src="index.js"></script>
+</body>
+
+</html>

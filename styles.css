@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(12deg, rgba(2, 0, 36, 1) 0%, rgba(196, 20, 170, 0.9318102240896359) 0%, rgba(137, 78, 196, 0.9486169467787114) 50%, rgba(0, 212, 255, 0.9009978991596639) 100%) no-repeat center center fixed;
+}
+button {
+    cursor: pointer;
+}
+.table-container {
+    width: 50vw;
+    height: auto;
+    overflow: auto; margin: 50px auto;
+    position: relative;left: 0; right: 0;
+    background-color: #f3f3f3;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .5);
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.table {
+    width: 99%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.tRow {
+    height: 40px;
+    width: 100%;
+}
+
+.tHeader, .tTitle {
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: #cecece;
+    line-height: 50px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.tBody {
+
+}
+.tData:nth-of-type(3) {
+    margin: 0; /* Убираем внешний отступ */
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis;
+    -webkit-box-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tData {
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid black;
+    max-height: 40px;
+}
+.sort-max::after {
+    content: "\25b4";
+}
+.sort-min::after {
+    content: "\25be";
+}
+
+.sort-min::after,
+.sort-max::after {
+    margin-left: 5px;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+}
+#pagination {
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    list-style-type: none;
+}
+#pagination li {
+    margin-right: 5px;
+    padding: 2px;
+    border: 1px solid #f3f3f3;
+}
+#pagination li:hover, #pagination li.active {
+    cursor: pointer;
+    color: red;
+    border-bottom: 1px dashed black;
+}
+
+
+.form-container {
+    width: 50vw;
+    height: auto;
+    padding: 10px 0 10px 0;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .5);
+    border-radius: 7px;
+}
+.form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form__list__item__label {
+    margin-left: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.form__buttons-container{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+.form__button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2196f3;
+    margin-right: 20px;
+}
+.form__button:hover{
+    background-color: #c022b3;
+    color: white
+}
+.form__list__item__input {
+    width: auto;
+    max-width: 1260px;
+    height: 20px;
+    resize: none;
+}
+.form__list__item__text {
+    resize: vertical;
+    height: 110px;
+}
+
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+    border: none;
+}
